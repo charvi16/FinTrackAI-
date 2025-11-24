@@ -1,0 +1,132 @@
+/* src/pages/Dashboard/Dashboard.css */
+.dash {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dash-inner {
+  max-width: 90vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.dash-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1vh;
+}
+
+.dash-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.dash-header-actions {
+  display: flex;
+  gap: 1vw;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2vw;
+}
+
+.dash-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 3vh 2vw;
+  border: 0.05rem solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.dash-card-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.dash-card-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1.5vh;
+}
+
+.dash-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 3vw;
+}
+
+.dash-ai,
+.dash-quick {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 3vh 2vw;
+  border: 0.05rem solid var(--border-subtle);
+}
+
+.dash-ai h3,
+.dash-quick h3 {
+  margin-bottom: 1.5vh;
+}
+
+.dash-ai p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.dash-quick-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.dash-quick-pill {
+  border-radius: var(--radius-pill);
+  padding: 1vh 2vw;
+  font-size: 0.9rem;
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--text-secondary);
+}
+
+.dash-quick-pill:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .dash-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dash-bottom {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dash-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dash-header-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .dash-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

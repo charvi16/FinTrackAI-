@@ -1,0 +1,298 @@
+/* Page Wrapper */
+.profile-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5vh 4vw;
+  background: #eeeeee !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main profile card */
+.profile-box {
+  width: 45vw;
+  min-width: 320px;
+  padding: 4vh 3vw;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image */
+.profile-main-img {
+  width: 14vh;
+  height: 14vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dedede;
+}
+
+.profile-username {
+  margin-top: 2vh;
+  font-size: 2.8vh;
+  font-weight: 600;
+  color: green;
+}
+
+.profile-edit-btn {
+  margin-top: 2vh;
+  padding: 1.2vh 3vh;
+  border-radius: 10px;
+  border: none;
+  background: #3272ff;
+  color: white;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.months-container {
+  margin-top: 4vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+
+.month-card {
+  color: rgb(1, 66, 1);
+  width: 80%;
+  padding: 2vh 2vw;
+  background: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: 0.2s ease;
+}
+
+.month-card:hover {
+  transform: scale(1.03);
+}
+
+.add-month-card {
+  color: rgb(1, 78, 1);
+  width: 80%;
+  padding: 2vh;
+  background: #f3f3f3;
+  border-radius: 1.2rem;
+  border: 2px dashed #aaa;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ADD MONTH MODAL */
+.add-month-modal {
+  width: 85%;
+  max-width: 420px;
+  background: white;
+  padding: 3vh 3vw;
+  border-radius: 1.4rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.month-label{
+  color: rgb(2, 72, 2);
+}
+
+.month-h2{
+  color: rgb(1, 59, 1);
+}
+
+.modal-input-wrapper {
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input-wrapper label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5vh;
+}
+
+.modal-input-wrapper input {
+  padding: 1vh 1vw;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+}
+
+.modal-submit-btn {
+  margin-top: 2vh;
+  width: 100%;
+  padding: 1.4vh 0;
+  background: #1976d2;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.modal-submit-btn:hover {
+  background: #145ca4;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 5vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-detail-modal {
+  width: 85%;
+  max-width: 400px;
+  background: white;
+  padding: 3vh 3vw;
+  border-radius: 1.4rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2vh 0;
+}
+
+.close-btn {
+  float: right;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* ------------- MODAL STYLES ---------------- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.edit-modal {
+  width: 40vw;
+  min-width: 340px;
+  padding: 4vh 3vw;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  animation: popIn 0.25s ease-out;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.modal-img-wrapper {
+  text-align: center;
+}
+
+.modal-profile-img {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  margin-bottom: 2vh;
+}
+
+.modal-upload-btn,
+.modal-delete-btn {
+  padding: 1vh 2vh;
+  font-size: 1.8vh;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-upload-btn {
+  background: #2c75ff;
+  color: white;
+}
+
+.modal-upload-btn input {
+  display: none;
+}
+
+.modal-delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.modal-inputs {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.modals-place{
+  color: #3c3636;
+}
+
+.modal-inputs input {
+  padding: 1.3vh;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 2vh;
+}
+
+.modal-buttons {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-cancel-btn,
+.modal-save-btn {
+  padding: 1.3vh 3vh;
+  border-radius: 10px;
+  border: none;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.modal-cancel-btn {
+  background: #ddd;
+}
+
+.modal-save-btn {
+  background: #2c7aff;
+  color: white;
+}
+
+
+@keyframes popIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+

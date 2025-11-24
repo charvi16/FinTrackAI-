@@ -1,0 +1,129 @@
+/* src/pages/Expenses/Expenses.css */
+.exp-wrapper {
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.exp-header h2 {
+  font-size: 1.6rem;
+}
+
+.exp-header p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.exp-header-actions {
+  display: flex;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
+
+.exp-list {
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: var(--card-bg);
+  border: 0.05rem solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  padding: 3vh 2vw;
+}
+
+.exp-table-header,
+.exp-row {
+  display: grid;
+  grid-template-columns: 2.4fr 1.1fr 1.1fr 1.2fr 0.8fr;
+  gap: 1vw;
+  padding: 1.2vh 0;
+  font-size: 0.9rem;
+}
+
+.exp-table-header {
+  border-bottom: 0.05rem solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.exp-row + .exp-row {
+  border-top: 0.05rem solid rgba(31, 41, 55, 0.8);
+}
+
+.exp-amount {
+  font-weight: 600;
+}
+
+.exp-amount-negative {
+  color: var(--danger);
+}
+
+.exp-amount-positive {
+  color: var(--accent);
+}
+
+.exp-empty {
+  text-align: center;
+  padding: 3vh 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.exp-delete-btn {
+  border: none;
+  background: transparent;
+  color: var(--danger);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.exp-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin-bottom: 2vh;
+}
+
+.exp-filter-bar input,
+.exp-filter-bar select {
+  padding: 1.2vh 1.2vw;
+  border-radius: 1rem;
+  border: 0.06rem solid var(--border-subtle);
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .exp-table-header,
+  .exp-row {
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  }
+
+  .exp-row > :last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .exp-table-header {
+    display: none;
+  }
+
+  .exp-row {
+    grid-template-columns: 1.8fr 1.2fr;
+    row-gap: 0.5vh;
+  }
+
+  .exp-row div:nth-child(3),
+  .exp-row div:nth-child(4) {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+}

@@ -1,0 +1,38 @@
+/* src/components/Button/Button.css */
+.ft-button {
+  border: none;
+  outline: none;
+  padding: 1.5vh 3vw;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+
+.ft-button--full {
+  width: 100%;
+}
+
+.ft-button:hover {
+  transform: translateY(-0.4vh);
+  background: var(--accent-strong);
+  box-shadow: 0 0 3rem rgba(34, 197, 94, 0.4);
+}
+
+.ft-button--ghost {
+  background: transparent;
+  border: 0.1rem solid var(--accent);
+  box-shadow: none;
+}
+
+.ft-button--ghost:hover {
+  background: var(--accent-soft);
+}

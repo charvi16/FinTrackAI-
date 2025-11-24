@@ -1,0 +1,137 @@
+.goals-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 6vh 5vw;
+  background: #f9f6f1;
+}
+
+.goals-title {
+  font-size: 4vh;
+  font-weight: 700;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+.goals-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+
+/* Goal card */
+.goal-card {
+  width: 22vw;
+  min-width: 180px;
+  padding: 4vh 2vw;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-size: 2.2vh;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s;
+  color: green;
+}
+
+.goal-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Add card */
+.goal-add-card {
+  width: 22vw;
+  min-width: 180px;
+  padding: 4vh 2vw;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.goal-modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4000;
+}
+
+/* Modal box */
+.goal-modal {
+  width: 45vw;
+  min-width: 330px;
+  padding: 4vh 3vw;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+/* Field rows */
+.goal-field-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.goal-field-row label {
+  width: 25%;
+  font-size: 2vh;
+}
+
+.goal-field-row input {
+  width: 70%;
+  padding: 1.4vh 1vw;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 2vh;
+}
+
+/* AI box */
+.ai-text-box {
+  margin-top: 3vh;
+  padding: 2vh 1vw;
+  background: #f3f0e9;
+  border-radius: 12px;
+  font-size: 1.9vh;
+}
+
+.ai-text-box h4 {
+  margin-bottom: 1vh;
+}
+
+/* Buttons */
+.goal-modal-buttons {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 1.3vh 3vh;
+  font-size: 2vh;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ddd;
+}
+
+.save-btn {
+  background: #3477ff;
+  color: white;
+}

@@ -1,0 +1,13 @@
+.calc-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 5vh;
+  background: #f5f7fb;
+}
+
+.calc-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3vh;
+  color: rgb(19, 108, 19);
+}

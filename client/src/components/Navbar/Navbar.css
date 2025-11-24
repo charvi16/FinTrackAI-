@@ -1,0 +1,124 @@
+/* src/components/Navbar/Navbar.css */
+.ft-nav {
+  width: 100vw;
+  padding: 2vh 4vw;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(1.5rem);
+  background: linear-gradient(
+    120deg,
+    rgba(15, 23, 42, 0.9),
+    rgba(17, 24, 39, 0.85)
+  );
+  border-bottom: 0.05rem solid var(--border-subtle);
+}
+
+.ft-nav-inner {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.ft-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.ft-nav-logo-icon {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 1rem;
+  background: radial-gradient(circle, var(--accent), var(--accent-strong));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #022c22;
+  box-shadow: 0 0 2rem rgba(34, 197, 94, 0.6);
+}
+
+.ft-nav-logo-text {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 1.05rem;
+}
+
+.ft-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.ft-nav-links a {
+  position: relative;
+}
+
+.ft-nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5vh;
+  width: 0;
+  height: 0.2vh;
+  border-radius: 1rem;
+  background: var(--accent);
+  transition: width 0.2s ease-out;
+}
+
+.ft-nav-links a:hover::after {
+  width: 100%;
+}
+
+.ft-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.ft-nav-user {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.ft-profile-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.ft-profile-img:hover {
+  border-color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+  .ft-nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+  }
+
+  .ft-nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4vw;
+  }
+
+  .ft-nav-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,79 @@
+.ef-container {
+  width: 80vw;
+  max-width: 600px;
+  margin: 5vh auto;
+  padding: 3vh 3vw;
+  background: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.ef-title {
+  color: rgb(90, 202, 90);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2vh;
+}
+
+.ef-label {
+  color: rgb(90, 202, 90);
+  display: block;
+  margin-top: 2vh;
+  font-size: 1.1rem;
+}
+
+.ef-input {
+  width: 100%;
+  padding: 1vh 1vw;
+  margin-top: 1vh;
+  border: 1px solid #bbb;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}
+
+.ef-btn {
+  width: 100%;
+  padding: 1.8vh 0;
+  margin-top: 3vh;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.ef-btn:hover {
+  background: #145ca4;
+}
+
+.ef-result-box {
+  margin-top: 4vh;
+  padding: 3vh 2vw;
+  background: #e7f8e7;
+  border-radius: 1rem;
+}
+
+.ef-result-title {
+  color: rgb(87, 116, 42);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p{
+  color: rgb(97, 129, 48);
+}
+
+.ef-fund {
+  color: rgb(97, 129, 48);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1vh;
+}
+
+.ef-summary {
+  margin-top: 2vh;
+  white-space: pre-line;
+  font-size: 1rem;
+  color: #444;
+}

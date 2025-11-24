@@ -1,0 +1,19 @@
+/* src/assets/styles/variables.css */
+:root {
+  --bg-main: linear-gradient(135deg, #050816, #111827);
+  --card-bg: rgba(17, 24, 39, 0.9);
+  --accent: #22c55e;
+  --accent-soft: rgba(34, 197, 94, 0.2);
+  --accent-strong: #16a34a;
+  --danger: #ef4444;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --border-subtle: rgba(156, 163, 175, 0.4);
+
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --shadow-soft: 0 0 2rem rgba(0, 0, 0, 0.4);
+  --radius-lg: 2rem;
+  --radius-md: 1rem;
+  --radius-pill: 999rem;
+}
